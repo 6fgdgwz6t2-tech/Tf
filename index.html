@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10213d">\n<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMjggMTI4Jz48cmVjdCB3aWR0aD0nMTI4JyBoZWlnaHQ9JzEyOCcgcng9JzI4JyBmaWxsPScjMTAyMTNkJy8+PHBhdGggZD0nTTIyIDY2IDY0IDI4IDEwNiA2NicgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmJyBzdHJva2Utd2lkdGg9JzgnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPjxwYXRoIGQ9J00zNSA2MnY0MGg1OFY2MicgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmJyBzdHJva2Utd2lkdGg9JzcnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnLz48cGF0aCBkPSdNNTIgMTAyVjc2aDI0djI2JyBmaWxsPSdub25lJyBzdHJva2U9JyM4ZGI3ZmYnIHN0cm9rZS13aWR0aD0nNycgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPjwvc3ZnPg==">\n<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMjggMTI4Jz48cmVjdCB3aWR0aD0nMTI4JyBoZWlnaHQ9JzEyOCcgcng9JzI4JyBmaWxsPScjMTAyMTNkJy8+PHBhdGggZD0nTTIyIDY2IDY0IDI4IDEwNiA2NicgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmJyBzdHJva2Utd2lkdGg9JzgnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPjxwYXRoIGQ9J00zNSA2MnY0MGg1OFY2MicgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmJyBzdHJva2Utd2lkdGg9JzcnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnLz48cGF0aCBkPSdNNTIgMTAyVjc2aDI0djI2JyBmaWxsPSdub25lJyBzdHJva2U9JyM4ZGI3ZmYnIHN0cm9rZS13aWR0aD0nNycgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPjwvc3ZnPg==">
+<title>NK | حاسبة الأقساط</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f2f5f9;color:#17243a;font-family:Arial,Tahoma,sans-serif}.wrap{max-width:850px;margin:auto;padding:14px}.head{background:#10213d;color:#fff;border-radius:15px;padding:18px;margin-bottom:12px}.head strong{font-size:20px;letter-spacing:1px}.head div{color:#cbd5e1;font-size:12px;margin-top:6px}.tabs{display:flex;gap:8px;margin-bottom:12px}.tab{flex:1;border:1px solid #dbe2ec;background:#fff;border-radius:10px;padding:12px;font-weight:bold;color:#40516a}.tab.on{background:#10213d;color:white}.page{display:none}.page.on{display:block}.card{background:white;border:1px solid #e0e7f0;border-radius:14px;padding:16px;margin-bottom:12px}.card h2{font-size:16px;margin:0 0 14px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field label{display:block;font-size:12px;font-weight:bold;margin-bottom:6px}input,select{width:100%;min-width:0;border:1px solid #ccd6e4;background:white;border-radius:9px;padding:12px;font-size:16px;color:#17243a}.field{margin-bottom:10px}.summary{display:grid;grid-template-columns:1fr 1fr;gap:9px}.tile{background:#f5f7fb;border:1px solid #e6ebf3;border-radius:11px;padding:12px;min-width:0}.tile.main{background:#10213d;color:#fff}.tile small{display:block;color:#64748b;font-size:12px;margin-bottom:7px}.tile.main small{color:#cbd5e1}.tile b{font-size:clamp(16px,4vw,22px);overflow-wrap:anywhere}.line{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #edf0f5;font-size:13px}.line:last-child{border:0}.line span{color:#64748b}.line b{text-align:left;overflow-wrap:anywhere}.btn{border:0;border-radius:10px;padding:12px 14px;font-size:14px;font-weight:bold;cursor:pointer}.dark{background:#10213d;color:#fff}.light{background:#e8edf5;color:#10213d}.buttons{display:flex;gap:8px}.buttons .btn{flex:1}.hint{font-size:11px;color:#64748b;line-height:1.7;margin:10px 0 0}.filters{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}.stat{background:#fff;border:1px solid #e0e7f0;border-radius:10px;padding:12px}.stat small{display:block;color:#64748b;margin-bottom:6px}.stat b{font-size:14px;overflow-wrap:anywhere}.tablebox{overflow:auto;max-height:55vh;border:1px solid #e0e7f0;border-radius:10px;background:white}table{width:100%;border-collapse:collapse;white-space:nowrap;font-size:13px}th,td{padding:11px;text-align:right;border-bottom:1px solid #edf0f5}th{background:#f4f6fa;position:sticky;top:0}#empty{padding:20px;text-align:center;color:#64748b;font-size:13px}.foot{text-align:center;color:#7b8798;font-size:11px;padding:8px}@media(min-width:650px){.summary{grid-template-columns:repeat(4,1fr)}.fields{grid-template-columns:repeat(2,1fr)}}@media print{body{background:#fff}.wrap{padding:0}.tabs,.buttons,.foot{display:none!important}.page{display:none!important}.page.on{display:block!important}.tablebox{max-height:none;overflow:visible}th{position:static}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="head"><strong>NK REAL ESTATE</strong><div>حاسبة سعر الوحدة والأقساط</div></header>
+<nav class="tabs">
+<button class="tab on" id="tabCalc" type="button">1. الحاسبة</button>
+<button class="tab" id="tabSchedule" type="button">2. جدول الأقساط</button>
+</nav>
+
+<section class="page on" id="calcPage">
+<div class="card">
+<h2>بيانات الوحدة</h2>
+<div class="field"><label for="price">سعر الوحدة بالجنيه</label><input id="price" type="number" min="0" step="any" value="10000000"></div>
+<div class="fields">
+<div class="field"><label for="dp">المقدم (%)</label><select id="dp"></select></div>
+<div class="field"><label for="maint">الصيانة (%)</label><select id="maint"></select></div>
+<div class="field"><label for="years">سنوات التقسيط</label><select id="years"></select></div>
+<div class="field"><label for="first">تاريخ أول قسط</label><input id="first" type="date"></div>
+</div>
+</div>
+
+<div class="card">
+<h2>النتيجة</h2>
+<div class="summary">
+<div class="tile main"><small>القسط كل 3 شهور</small><b id="installment">—</b></div>
+<div class="tile"><small>المقدم</small><b id="dpVal">—</b></div>
+<div class="tile"><small>الصيانة</small><b id="maintVal">—</b></div>
+<div class="tile"><small>المتبقي للتقسيط</small><b id="remainVal">—</b></div>
+</div>
+<div style="margin-top:8px">
+<div class="line"><span>سعر الوحدة</span><b id="priceVal">—</b></div>
+<div class="line"><span>عدد الأقساط</span><b id="countVal">—</b></div>
+<div class="line"><span>إجمالي الأقساط</span><b id="totalInst">—</b></div>
+<div class="line"><span>المقدم + الصيانة</span><b id="upfront">—</b></div>
+<div class="line"><span>إجمالي المدفوع شامل الصيانة</span><b id="grand">—</b></div>
+</div>
+<p class="hint">الحساب يفترض أقساطًا متساوية كل 3 شهور. الصيانة مبلغ إضافي محسوب كنسبة من سعر الوحدة، ولا تدخل ضمن الأقساط.</p>
+<div class="buttons" style="margin-top:12px"><button class="btn dark" id="goSchedule" type="button">عرض جدول الأقساط</button><button class="btn light" id="reset" type="button">إعادة ضبط</button></div>
+</div>
+</section>
+
+<section class="page" id="schedulePage">
+<div class="card">
+<h2>جدول الأقساط</h2>
+<div class="filters">
+<div class="field"><label for="from">من تاريخ</label><input id="from" type="date"></div>
+<div class="field"><label for="to">إلى تاريخ</label><input id="to" type="date"></div>
+</div>
+<div class="buttons"><button class="btn dark" id="showAll" type="button">عرض كل الأقساط</button><button class="btn light" id="print" type="button">طباعة / PDF</button></div>
+<p class="hint">تقدر تحدد فترة زمنية، أو تضغط «عرض كل الأقساط» لإظهار الجدول كاملًا.</p>
+</div>
+<div class="stats">
+<div class="stat"><small>عدد الأقساط الظاهرة</small><b id="shownCount">—</b></div>
+<div class="stat"><small>إجمالي الأقساط الظاهرة</small><b id="shownTotal">—</b></div>
+<div class="stat"><small>أول قسط في الخطة</small><b id="firstOut">—</b></div>
+<div class="stat"><small>آخر قسط في الخطة</small><b id="lastOut">—</b></div>
+</div>
+<div class="tablebox"><table><thead><tr><th>رقم القسط</th><th>تاريخ الاستحقاق</th><th>قيمة القسط</th></tr></thead><tbody id="rows"></tbody></table><div id="empty" hidden>لا توجد أقساط في الفترة دي.</div></div>
+</section>
+<div class="foot">NK REAL ESTATE · حاسبة تقديرية</div>
+</div>
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+const money=n=>Math.round(n).toLocaleString('en-US')+' EGP';
+const dateText=d=>d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});
+const localISO=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+function fill(id,vals,suffix,chosen){vals.forEach(v=>{let o=document.createElement('option');o.value=v;o.textContent=v+suffix;if(v===chosen)o.selected=true;$(id).appendChild(o);});}
+fill('dp',Array.from({length:101},(_,i)=>i*.5),'%',10);
+fill('maint',[0,5,6,7,8,9,10],'%',0);
+fill('years',Array.from({length:15},(_,i)=>i+1),' سنة',8);
+let today=new Date();$('first').value=localISO(today);$('from').value=localISO(today);
+let end=new Date(today);end.setFullYear(end.getFullYear()+8);$('to').value=localISO(end);
+let plan=[];
+function addMonths(date,n){let d=new Date(date.getFullYear(),date.getMonth(),1);let day=date.getDate();d.setMonth(d.getMonth()+n);let last=new Date(d.getFullYear(),d.getMonth()+1,0).getDate();d.setDate(Math.min(day,last));return d;}
+function calculate(){
+let price=Math.max(0,Number($('price').value)||0),dpRate=Number($('dp').value),mRate=Number($('maint').value),years=Number($('years').value);
+let dp=price*dpRate/100,maint=price*mRate/100,remain=price-dp,count=years*4,inst=count?remain/count:0;
+let start=$('first').value?new Date($('first').value+'T12:00:00'):new Date();plan=[];
+for(let i=0;i<count;i++)plan.push({n:i+1,date:addMonths(start,i*3),amount:inst});
+$('installment').textContent=money(inst);$('dpVal').textContent=money(dp);$('maintVal').textContent=money(maint);$('remainVal').textContent=money(remain);
+$('priceVal').textContent=money(price);$('countVal').textContent=count+' قسط';$('totalInst').textContent=money(inst*count);$('upfront').textContent=money(dp+maint);$('grand').textContent=money(dp+maint+inst*count);
+$('firstOut').textContent=plan.length?dateText(plan[0].date):'—';$('lastOut').textContent=plan.length?dateText(plan[plan.length-1].date):'—';
+render();
+}
+function render(){
+let from=$('from').value?new Date($('from').value+'T00:00:00'):null,to=$('to').value?new Date($('to').value+'T23:59:59'):null;
+let list=plan.filter(r=>(!from||r.date>=from)&&(!to||r.date<=to));
+$('rows').innerHTML='';$('empty').hidden=list.length>0;
+list.forEach(r=>{let tr=document.createElement('tr');[r.n,dateText(r.date),money(r.amount)].forEach(v=>{let td=document.createElement('td');td.textContent=v;tr.appendChild(td);});$('rows').appendChild(tr);});
+$('shownCount').textContent=list.length;$('shownTotal').textContent=money(list.reduce((s,r)=>s+r.amount,0));
+}
+function page(which){let calc=which==='calc';$('calcPage').classList.toggle('on',calc);$('schedulePage').classList.toggle('on',!calc);$('tabCalc').classList.toggle('on',calc);$('tabSchedule').classList.toggle('on',!calc);window.scrollTo(0,0);if(!calc)render();}
+['price','dp','maint','years','first'].forEach(id=>$(id).addEventListener('input',calculate));
+['from','to'].forEach(id=>$(id).addEventListener('change',render));
+$('tabCalc').addEventListener('click',()=>page('calc'));$('tabSchedule').addEventListener('click',()=>page('schedule'));$('goSchedule').addEventListener('click',()=>page('schedule'));
+$('showAll').addEventListener('click',()=>{$('from').value='';$('to').value='';render();});
+$('print').addEventListener('click',()=>window.print());
+$('reset').addEventListener('click',()=>{$('price').value=10000000;$('dp').value=10;$('maint').value=0;$('years').value=8;$('first').value=localISO(new Date());$('from').value=$('first').value;let d=new Date();d.setFullYear(d.getFullYear()+8);$('to').value=localISO(d);calculate();});
+calculate();
+})();
+</script>
+</body>
+</html>
